@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form >
+                
+                    <div class="display">
+                        <input type="text" name="calval" style="box-shadow: none none;">
+                    </div>
+                    
+                    <div>
+                        <input type="button" value="AC" class="special" onclick="calval.value='' " class="special">
+                        <input type="button" value="DE" class="special" onclick="calval.value.toString().slice(0,-1)">
+                        <input type="button" value="." class="special"  onclick="calval.value+='.' ">
+                        <input type="button" value="/" class="special" onclick="calval.value+='/' ">
+                </div>
+                    <div>
+                        <input type="button" value="7" onclick="calval.value +='7' ">
+                        <input type="button" value="8" onclick="calval.value +='8' ">
+                        <input type="button" value="9" onclick="calval.value +='9' ">
+                        <input type="button" value="*" class="special" onclick="calval.value +='*' ">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="calval.value +='4' ">
+                        <input type="button" value="5" onclick="calval.value +='5' ">
+                        <input type="button" value="6" onclick="calval.value +='6' ">
+                        <input type="button" value="-" class="special" onclick="calval.value +='-' ">
+                    </div>
+                    <div>
+                        <input type="button" value="3" onclick="calval.value+='3' ">
+                        <input type="button" value="2" onclick="calval.value+='2' ">
+                        <input type="button" value="1" onclick="calval.value+='1' ">
+                        <input type="button" value="+" class="special" onclick="calval.value+='+' ">
+                </div>
+                <div>
+                        <input type="button" value="00" onclick="calval.value+='00' ">
+                        <input type="button" value="0" onclick="calval.value+='0' ">
+                        <input type="button" class="equal special" value="=" onclick="calval.value=eval(calval.value) ">
+                    </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
